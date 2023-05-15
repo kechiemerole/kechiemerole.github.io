@@ -1,0 +1,824 @@
+/* Add a black background color to the top navigation */
+/* * {
+  outline: 1px solid red
+} */
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+      /* background-image: url('pinkcloud'); */
+    /* background-color: linear-gradient (141deg, #0fb8ad 0%, #dfafca 51%, #dfafca 75%); */
+    /* background: linear-gradient(45deg, rgb(237, 201, 223), rgba(100, 96, 96, 0.823), rgba(255, 255, 255, 0.911)) ; */
+    /* background: linear-gradient(184deg, rgba(0, 0, 0, 0.104) 0%,rgb(189, 14, 14) 0%, rgba(255,255,255,1) 46%, rgb(244, 212, 255) 84%); */
+    /* background: radial-gradient(circle, rgba(252,131,70,0.8688725490196079) 7%, rgba(106,0,141,0.29184173669467783) 65%, rgba(227,243,251,1) 100%),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+    filter: contrast(100%) brightness(100%),
+    opactity: 0.2%; */
+
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    margin: 0px;
+    overflow-x: hidden;
+  }
+
+  .landing {
+    padding-top: 15px;
+    overflow:auto;
+    height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(252, 131, 70, 0.604) 7%, rgba(106,0,141,0.29184173669467783) 65%, rgba(227,243,251,1) 100%),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+    filter: contrast(100%) brightness(100%);  
+
+
+  }
+
+  .top {
+    padding-top: 1px;
+    overflow:auto;
+    margin: 10px;
+  }
+
+  .landing_block {
+    padding-top: 150px;
+
+
+  }
+
+  
+  .me {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    height: 300px;
+    width: 300px;
+    background: cover;
+    margin-left: auto;
+    justify-content: right;
+  }
+
+ 
+  #hi {
+  color:rgba(240, 240, 240, 0.544);
+  font-size: 60px;
+  padding-top: 50px;
+  font-weight: bold;
+   }
+
+span {
+    /* color:rgba(150, 9, 93, 0.96); */
+    color:rgb(51, 50, 51);
+    font-weight: bold;
+}
+
+#message {
+    font-size: 23px;
+    width: 60%;
+    font-weight: 700px;
+    color:rgb(51, 50, 51);
+
+  }
+
+
+
+.about_me {
+    background-color: white;
+    background: radial-gradient(circle, rgba(252, 131, 70, 0.604) 7%, rgba(106,0,141,0.29184173669467783) 65%, rgba(227,243,251,1) 100%),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+    /* font-family: 'Montserrat', sans-serif; */
+    padding-top: 1px;
+    padding-bottom: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 2px;
+    overflow:auto;
+}
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#headings {
+    /* color:rgb(163, 5, 100); */
+    color:rgb(51, 50, 51);
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+
+hr {
+    color:rgb(163, 5, 100);
+}
+.Top_Navigation {
+    background-color:white;
+    overflow: hidden;
+    margin: auto;
+    float: center;
+    padding: 10px 0px;
+  top: 0;
+  margin: 0px;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .Top_Navigation  a {
+
+    text-align: center;
+    justify-content: center;
+    color: black;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800px;
+
+   
+  }
+.top {
+  margin:0px;
+}
+  @media (max-width: 600px) {
+    #hi {
+      font-size: 50px;
+    }
+  
+    #hi span {
+      font-size: 50px;
+
+    }
+  
+    #message {
+      font-size: 25px;
+
+    }
+  }
+  
+  /* Change the color of links on hover */
+  .Top_Navigation  a:hover {
+    color: #dfafca;
+  }
+
+.Top_Navigation .icon {
+    display: none;
+  }
+  
+  /* Add a color to the active/current link */
+  .Top_Navigation nav a.active {
+    background-color: #dfafca;
+    color: white;
+  }
+
+  @media screen and (max-width: 620px) {
+    .Top_Navigation a:not(:first-child) {display: none;}
+    .Top_Navigation a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .Top_Navigation.responsive {position: relative;}
+    .Top_Navigation.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .Top_Navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  .button {
+    background-color:rgba(106,0,141,0.29184173669467783);
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    font-size: 18px;
+    /* margin: 4px 2px; */
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+  }
+
+  .button1 {
+    background-color:rgba(106,0,141,0.29184173669467783);
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    text-align: center;
+    font-size: 14px;
+    float: center;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 10px;
+    bottom: 10px;
+    cursor: pointer;
+
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.416);  */
+
+    /* left: 0; */ 
+  }
+
+
+
+  @media (max-width: 600px) {
+    .button1 {
+      font-size: 12px;
+      padding: 6px 6px;
+      margin: 2px;
+    }
+  }
+ 
+
+  .button:hover {opacity: 0.6}
+  .button1:hover {  background-color:rgb(72, 0, 96);
+
+  }
+
+  
+p{
+    font-size: 18px;
+    
+}
+
+#p-portfolio {
+  margin-bottom: 40px;
+    text-align: left;
+
+}
+.icon-container {
+  display:flexbox;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.landing-skills {
+  margin-top: 25px;
+}
+
+#name
+{
+    width: 50%;
+    
+}
+
+@media screen and (max-width: 600px) {
+  #name {
+    font-size: 15px;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cecece;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } 
+
+
+  .pic {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+    object-position: top;
+    float: right; 
+    margin-right: 100px;
+    border-radius: 50%;
+    white-space: nowrap;
+
+    /* justify-content: bottom; */
+
+}
+
+img  {
+    margin: 40px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    float: center; 
+}
+/* the 4 columns  */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    flex-wrap: wrap;   
+    height: 550px;
+    width:auto;
+    position: relative; 
+    border-radius: 12px; 
+
+  }
+ 
+  @media screen and (max-width: 980px) {
+    .grid-container {
+
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-container {
+      justify-content: center;
+      height: calc(100vh + 250px); /* Increase the height to 1000px on screens smaller than 600px */
+      width: auto;
+      grid-gap: 20px;
+
+    }
+  }
+
+  
+  @media screen and (max-width: 1200px) {
+    .grid-container {
+
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-container {
+      justify-content: center;
+      height: 80vh; /* Increase the height to 1000px on screens smaller than 600px */
+      width: auto;
+      grid-gap: 20px;
+
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Stack columns on top of each other */
+      height: 1810px; /* Increase the height to 1000px */
+      width: 400px;
+      justify-content: center;
+      grid-gap: 20px;
+    }
+  }
+ 
+ 
+  
+ /* The photos in the columns */
+ .grid-item {
+
+  position: relative;
+  justify-content: left;
+  border-radius: 12px;
+  transition: transform 0.5s;
+  z-index: 1;
+  height: auto; 
+
+  /* border: 1px solid rgba(128, 128, 128, 0.529); */
+  -webkit-backdrop-filter: blur(100px); 
+ backdrop-filter: blur(100px);
+ max-width: 100%; /* Set the maximum width for the content */
+ background-color: rgba(245, 245, 245, 0.671);
+ 
+
+  box-shadow: 0 0 10px rgba(28, 28, 28, 0.382); 
+   
+}
+.grid-item:hover {
+  transform: scale(1.1); /* Adjust the scale factor as per your preference */
+  z-index: 2;
+
+}
+  .grid-item1 {
+    position: relative;
+    text-align: left;
+    /* height: auto; */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    transition: transform 0.5s;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(28, 28, 28, 0.382); /* Adjust the shadow properties as needed */
+    -webkit-backdrop-filter: blur(100px); 
+    backdrop-filter: blur(100px);
+    background-color: rgba(245, 245, 245, 0.671);
+    height: auto; 
+ 
+  }
+  .grid-item1:hover {
+    transform: scale(1.1); /* Adjust the scale factor as per your preference */
+    z-index: 2;
+  
+  }
+  .grid-item2 {
+    position: relative;
+     text-align: left;
+    /* height: auto; */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    transition: transform 0.5s;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(28, 28, 28, 0.382); 
+    -webkit-backdrop-filter: blur(100px); 
+    backdrop-filter: blur(100px);
+    background-color: rgba(245, 245, 245, 0.671);
+    height: auto; 
+
+  }
+
+  .grid-item2:hover {
+    transform: scale(1.1); /* Adjust the scale factor as per your preference */
+    z-index: 2;
+  
+  }
+  .grid-item3 {
+    position: relative;
+    /* text-align: center; */
+    /* height: auto; */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    transition: transform 0.5s;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(28, 28, 28, 0.382);
+    -webkit-backdrop-filter: blur(100px); 
+    backdrop-filter: blur(100px);
+    background-color: rgba(245, 245, 245, 0.671);
+    height: auto; 
+ 
+}
+
+#grid-span3 {
+  position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(199, 219, 219, 0.329); */
+    margin: 5px;
+    border-radius: 10px;
+    /* border-radius: 12px; */
+    background-image: url('mysite.png') ;
+    background-size: cover;
+    height: 100px;
+    padding: 70px 1px;
+    /* border-radius: 12px; */
+    border: 1px solid grey; 
+
+
+}
+
+.grid-item3:hover {
+  transform: scale(1.1); /* Adjust the scale factor as per your preference */
+  z-index: 2;
+
+}
+  #grid-span {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(199, 219, 219, 0.329); */
+    margin: 5px;
+    border-radius: 10px;
+    /* border-radius: 12px; */
+    background-size: cover;
+    border: 1px solid grey; /* Add a black border */
+
+    background-image: url('drugs.jpeg') ;
+    height: 100px;
+    padding: 70px 1px;
+    /* border-radius: 12px; */
+    /* border: 1px solid grey; Add a black border */
+  }
+
+#span-description {
+  position: absolute;
+  /* bottom: 200px; */
+  left: 0;
+  right: 0;
+  padding: 4px;
+  display: flex;
+  justify-content: left;
+  margin-top: 250px;
+  font-size: 18px;
+  justify-content: center;
+
+
+}
+
+#description {
+  /* background-color: rgba(141, 141, 141, 0.8); */
+  color:rgb(51, 50, 51);
+  font-size: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 8px;
+  font-weight: lighter;
+  justify-content: center;
+
+}
+
+#cc  {
+  text-align: left;
+  
+
+
+}
+
+@media (max-width: 768px) {
+  #description {
+    font-size: 10px; /* Adjust the font size as needed for smaller screens */
+  }
+}
+
+
+  #grid-span1 {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    border: 1px solid grey; /* Add a black border */
+
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(199, 219, 219, 0.329); */
+    margin: 5px;
+    border-radius: 10px;
+    /* border-radius: 12px; */
+    background-image: url('pinkgas') ;
+    background-size: cover;
+    height: 100px;
+    padding: 70px 1px;
+    /* border-radius: 12px; */
+    /* border: 1px solid grey;  */
+  }
+
+
+/* The blur text */
+  #grid-span2 {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(199, 219, 219, 0.329); */
+    margin: 5px;
+    border-radius: 10px;
+    /* border-radius: 12px; */
+    background-image: url('bloodb.jpg') ;
+    background-size: cover;
+    height: 100px;
+    padding: 70px 1px;
+    /* border: 1px solid grey; */
+
+    /* border-radius: 12px; */
+    border: 1px solid grey; 
+}
+
+
+
+
+.description-content {
+  font-size: 12px;
+  font-weight: 700px;
+  text-align: left;
+}
+/* 
+  .container .content {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 100%; 
+    padding: 20px; 
+  } */
+
+  .footer{
+    background-color: #dfafca;  
+    padding: 4px;
+    overflow:auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .contact  {
+    height: 35px;
+    width: 35px;
+   
+}
+
+.follow-image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+.follow-image img {
+  width: 30px;
+  height: auto;
+}
+
+.list-component {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* align-items: flex-end; */
+  
+  
+}
+ /* https://www.computerhope.com/issues/ch001705.htm */
+.list-component .__item {
+  /* background: url(https://www.computerhope.com/issues/pictures/bullet.gif) no-repeat top left; */
+  /* background-position: top left;
+  padding: 0 0 4px 60px;
+  margin-left: 1em;
+  position: relative;
+  right: 67px;
+  margin-bottom: 10px;
+  top: 10px; */
+ 
+}
+
+.item-card-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* .__item {
+  margin-right: 20px; 
+}
+ */
+
+
+.card-component {
+  border: 1px solid rgba(128, 128, 128, 0.529);
+      -webkit-backdrop-filter: blur(100px); 
+     backdrop-filter: blur(100px);
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 400px;
+  position: relative;
+  bottom: 2px;
+  margin-bottom: 15px;
+  margin-right: 35px;
+  display:inline-block;
+
+  justify-content: center;
+  
+}
+.year-card-container {
+  display: flex;
+  /* align-items: right; */
+  display:inline-block;
+  
+}
+
+
+
+.__year {
+  /* text-align: left; */
+  margin-right: 20px;
+
+}
+
+@media (max-width: 700px) {
+  .__year {
+    font-size: 18px; /* Adjust the font size as needed for smaller screens */
+    white-space: nowrap;
+
+  }
+}
+.pill {
+  border: 1px solid rgba(128, 128, 128, 0.529);
+  background-color: #dcdbdb82;
+  color: black;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 2px;
+  font-size: 12px;
+  border-radius: 16px;
+  font-weight: 500px;
+  
+}
+.pill img {
+  padding: 0px;
+  height: 20px;
+  width:auto;
+  justify-content: left;
+}
+  
+.pill1 {
+  border: 1px solid rgba(123, 26, 219, 0.529);
+  background-color: #e7e6e682;
+  color: black;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 0px;
+  margin: 1px 1px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 16px;
+  font-weight: 500;
+  
+}
+
+@media (max-width: 908px) {
+  .pill1 {
+    font-size: 12px; /* Adjust the font size as needed for smaller screens */
+  }
+}
+.card-component:nth-child(even) {
+  margin-right: auto;
+}
+
+/* .card-component .__year {} */
+
+.card-component .__title {
+  font-size: 1em;
+  margin-top: 2px;
+
+}
+
+.__text {
+  font-size: 14px;
+}
+
+.slidein {
+  float:right;
+
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+      margin-right: -30%;
+  }
+  to {
+      margin-right: 0%;
+  }
+}
+
+
+.button img {
+  height: 20px;
+  width: auto;
+  position: relative;
+  margin: 0px;
+  margin-left: 2px;
+}
+
+.icon {
+  height:60px;
+  width:auto;
+  padding-left: 40px;
+
+}
+
+h4 {
+  color:rgba(0, 0, 0, 0.529);
+}
