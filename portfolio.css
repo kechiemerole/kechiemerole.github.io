@@ -538,7 +538,7 @@ img  {
     margin: 5px;
     border-radius: 10px;
     /* border-radius: 12px; */
-    background-image: url('mysite.png') ;
+    background-image: url('images/mysite.png') ;
     background-size: cover;
     height: 100px;
     padding: 70px 1px;
@@ -568,7 +568,7 @@ img  {
     background-size: cover;
     border: 1px solid grey; /* Add a black border */
 
-    background-image: url('drugs.jpeg') ;
+    background-image: url('images/drugs.jpeg') ;
     height: 100px;
     padding: 70px 1px;
     /* border-radius: 12px; */
@@ -632,7 +632,7 @@ img  {
     margin: 5px;
     border-radius: 10px;
     /* border-radius: 12px; */
-    background-image: url('pinkgas') ;
+    background-image: url('images/pinkgas') ;
     background-size: cover;
     height: 100px;
     padding: 70px 1px;
@@ -654,7 +654,7 @@ img  {
     margin: 5px;
     border-radius: 10px;
     /* border-radius: 12px; */
-    background-image: url('bloodb.jpg') ;
+    background-image: url('images/bloodb.jpg') ;
     background-size: cover;
     height: 100px;
     padding: 70px 1px;

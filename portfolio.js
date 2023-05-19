@@ -36,7 +36,7 @@ function myFunction() {
   });
 
   function loadPDF() {
-    window.open("kechi_emerole_resume.pdf");
+    window.open("files/Kechi_emerole_resume_.pdf");
   } 
   
 
