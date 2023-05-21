@@ -126,6 +126,7 @@ hr {
     color:rgb(163, 5, 100);
 }
 .Top_Navigation {
+
     background-color:white;
     overflow: hidden;
     margin: auto;
@@ -134,23 +135,32 @@ hr {
   top: 0;
   margin: 0px;
 
+
   }
   
   /* Style the links inside the navigation bar */
   .Top_Navigation  a {
 
     text-align: center;
-    justify-content: center;
     color: black;
     padding: 15px 15px;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 800px;
+    /* font-weight: bold; */
 
    
   }
 .top {
-  margin:0px;
+  position: fixed;
+  /* margin:0px; */
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  z-index: 9999;
+  flex: grid;
+  align-items: center;
+  justify-content: center;
+
 }
   @media (max-width: 600px) {
     #hi {

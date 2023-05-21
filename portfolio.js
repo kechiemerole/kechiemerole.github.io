@@ -40,5 +40,15 @@ function myFunction() {
   } 
   
 
+// JavaScript function to add/remove a class for styling the navigation bar
+window.onscroll = function() {myFunction()};
 
+function myFunction() {
+  var navbar = document.getElementById("myTopnav");
+  if (window.pageYOffset >= 40) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
  
