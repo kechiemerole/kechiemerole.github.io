@@ -41,11 +41,7 @@ body {
 
   }
 
-  .top {
-    padding-top: 1px;
-    overflow:auto;
-    margin: 10px;
-  }
+ 
 
   .landing_block {
     padding-top: 150px;
@@ -121,10 +117,22 @@ html {
     font-size: 36px;
     margin-bottom: 0px;
 }
+@media (max-width: 600px) {
+  #hi {
+    font-size: 50px;
+  }
 
-hr {
-    color:rgb(163, 5, 100);
+  #hi span {
+    font-size: 50px;
+
+  }
+
+  #message {
+    font-size: 25px;
+
+  }
 }
+
 .Top_Navigation {
 
     background-color:white;
@@ -132,10 +140,8 @@ hr {
     margin: auto;
     float: center;
     padding: 10px 0px;
-  top: 0;
-  margin: 0px;
-
-
+  /* top: 0;
+  margin: 0px; */
   }
   
   /* Style the links inside the navigation bar */
@@ -147,9 +153,9 @@ hr {
     text-decoration: none;
     font-size: 15px;
     /* font-weight: bold; */
-
    
   }
+
 .top {
   position: fixed;
   /* margin:0px; */
@@ -157,26 +163,12 @@ hr {
   margin: 0px;
   overflow: hidden;
   z-index: 9999;
-  flex: grid;
-  align-items: center;
-  justify-content: center;
+    /* overflow:auto; */
 
-}
-  @media (max-width: 600px) {
-    #hi {
-      font-size: 50px;
-    }
-  
-    #hi span {
-      font-size: 50px;
-
-    }
-  
-    #message {
-      font-size: 25px;
-
-    }
   }
+
+
+ 
   
   /* Change the color of links on hover */
   .Top_Navigation  a:hover {
@@ -193,13 +185,24 @@ hr {
     color: white;
   }
 
-  @media screen and (max-width: 620px) {
+  /* @media screen and (max-width: 620px) {
     .Top_Navigation a:not(:first-child) {display: none;}
     .Top_Navigation a.icon {
       float: right;
       display: block;
     }
+  } */
+
+  @media screen and (max-width: 620px) {
+    .Top_Navigation:not(.responsive) a:not(:first-child) {
+      display: none;
+    }
+    .Top_Navigation:not(.responsive) a.icon {
+      float: right;
+      display: block;
+    }
   }
+  
   
   @media screen and (max-width: 600px) {
     .Top_Navigation.responsive {position: relative;}
@@ -409,7 +412,7 @@ img  {
 
   }
  
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1200px) {
     .grid-container {
 
       grid-template-columns: repeat(2, 1fr);
@@ -424,7 +427,7 @@ img  {
   }
 
   
-  @media screen and (max-width: 1200px) {
+  /* @media screen and (max-width: 980px) {
     .grid-container {
 
       grid-template-columns: repeat(4, 1fr);
@@ -432,11 +435,11 @@ img  {
     .grid-container {
       justify-content: center;
       height: 80vh; /* Increase the height to 1000px on screens smaller than 600px */
-      width: auto;
+      /* width: auto;
       grid-gap: 20px;
 
     }
-  }
+  }  */
   @media screen and (max-width: 800px) {
     .grid-container {
       grid-template-columns: 1fr; /* Stack columns on top of each other */
