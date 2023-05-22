@@ -289,6 +289,13 @@ p{
   /* justify-content: center;
   align-items: center; */
 }
+.icon {
+  height:30px;
+  width:auto;
+  padding-right: 2px;
+  margin-left: 0px;
+outline:rgba(230, 19, 19, 0.604), 2px;
+}
 
 /* Media queries for different screen widths */
 @media only screen and (max-width: 768px) {
@@ -305,10 +312,10 @@ p{
 
 @media (max-width: 800px) {
   .icon-container img{
-    height: 35px;  
+    height: 30px;  
     width: auto;
-    padding-left: 10px;
-  
+    padding-left: 2px;
+    margin-bottom: 2px;
     
   }
 }
@@ -887,12 +894,7 @@ img  {
   margin-left: 2px;
 }
 
-.icon {
-  height:60px;
-  width:auto;
-  padding-left: 40px;
 
-}
 
 h4 {
   color:rgba(0, 0, 0, 0.529);
