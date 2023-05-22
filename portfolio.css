@@ -306,7 +306,10 @@ outline:rgba(230, 19, 19, 0.604), 2px;
 
 @media only screen and (max-width: 480px) {
   .icon {
-    max-width: 60px; /* Adjusted size for even smaller screens */
+    height: 25px;  
+    width: auto;
+    padding-left: 2px;
+    margin-bottom: 2px;/* Adjusted size for even smaller screens */
   }
 }
 
