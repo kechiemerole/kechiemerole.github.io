@@ -443,7 +443,7 @@ img  {
   @media screen and (max-width: 800px) {
     .grid-container {
       grid-template-columns: 1fr; /* Stack columns on top of each other */
-      height: 80vh; /* Increase the height to 1000px */
+      height: 1850px; /* Increase the height to 1000px */
       /* width: 350px; */
       justify-content: center;
       grid-gap: 20px;
